@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1tinhdiemtrungbinh</title>
+</head>
+<body>
+<script>
+    let a ;
+    do
+    {
+        a = parseFloat(prompt("Nhập điểm Toán "));
+
+    }
+    while (a<0||a>10)
+    let b ;
+    do
+    {
+        b = parseFloat(prompt("Nhập điểm Văn "));
+
+    }
+    while (b<0||b>10)
+    let c ;
+
+    do
+    {
+        c = parseFloat(prompt("Nhập điểm Tiếng Anh "));
+    }
+    while (c<0||c>10)
+    let DTB = (a*2+b+c*2)/5;
+    if (DTB < 5)
+    {
+        document.write(DTB + 'không đạt');
+
+    }else
+        if (5<=DTB&&DTB<7.5)
+        {
+        document.write(DTB + 'đạt');
+
+    }else
+        if (7.6<=DTB&&DTB < 8.5)
+        {
+
+        document.write(DTB + 'khá');
+
+    }else {
+
+            document.write(DTB + 'tốt');
+    }
+</script>
+
+</body>
+</html>
